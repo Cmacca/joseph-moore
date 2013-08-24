@@ -1,5 +1,14 @@
 .transition{transition:background 0.25s,color 0.25s,border 0.25s, position 0.25s;}
-header h1{vertical-align:top;display:inline-block;}
+html,body{text-align:center;}
+header{vertical-align:middle;display:inline-block;}header h1{vertical-align:top;display:inline-block;}
 header img{margin-right:20px;border-radius:100%;display:inline-block;border:2px solid #bdc3c7;}
+#pitch{padding:40px;background:rgba(0, 0, 0, 0.1);border-radius:10px;margin:0 auto;max-width:960px;line-height:2em;font-size:1.15em;}#pitch .bn{margin:20px;}
+.nav{display:inline-block;vertical-align:middle;margin-left:30px;margin-bottom:20px;}
 .postli{font-size:3em;font-weight:bold;color:#2c3e50;}
-#post{max-width:800px;line-height:2em;font-size:1.15em;padding-top:20px;}
+#post{max-width:800px;line-height:2em;font-size:1.15em;padding-top:20px;margin:0 auto;}
+footer p{text-align:center;display:inline-block;}
+footer .credit{font-size:.5em;display:inline-block;padding:5px;vertical-align:middle;}
+#product{max-width:350px;display:inline-block;text-align:left;}
+#checkout{width:auto;display:inline-block;vertical-align:top;padding:20px;background:rgba(0, 0, 0, 0.1);border-radius:5px;margin:20px;}
+.next-but{display:none;}
+@media (max-width:716px){.nav{margin-left:auto;}}
