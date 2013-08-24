@@ -1,0 +1,12 @@
+{
+  "globals": {
+    "name"  : {
+		"first": "Joseph",
+		"last": "Moore"
+		 },
+    "profile": {
+		"img": "http://randomuser.me/g/portraits/men/035.jpg",
+	        "email": "josephmoore54@mail.com"
+	        }
+  }
+}

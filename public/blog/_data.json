@@ -1,0 +1,11 @@
+{
+	"hello-world": {
+		"layout": "_blog"
+	},
+	"posts": {
+		"hello-world": {
+			"layout": "_blog",
+			"title": "Hello World!"
+		}
+	}
+}

@@ -1,0 +1,4 @@
+h2 Blog
+for post, slug in globals.public.blog.data.posts
+ a(href='/blog/#{slug}', class='postli') #{ post.title }
+

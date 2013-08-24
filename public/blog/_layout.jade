@@ -1,0 +1,13 @@
+doctype 5
+html
+ head
+  title #{ globals.name.first } #{ globals.name.last } - Profilic Motivational Speaker
+  link(href='/css/main.css', rel='stylesheet', type='text/css')
+ body
+  header
+   h1 #{ globals.name.first } #{ globals.name.last } - "Vision, Motivation, Action"
+  div#content
+   != yield
+  footer
+   p &copy; 2013 #{globals.name.first} #{globals.name.last}. All Rights Reserved.
+// Web Design and Development by Krish Dholakiya and Colin McIllece

@@ -1,0 +1,17 @@
+doctype 5
+html
+ head
+  title #{ globals.name.first } #{ globals.name.last } - Blog
+  link(href='/css/main.css', rel='stylesheet', type='text/css')
+  link(href='http://krrishd.github.io/some-css/main.min.css', rel='stylesheet', type='text/css')
+ body
+  header
+   img(src='#{globals.profile.img}', width="100px")
+   h1 #{ globals.name.first } #{ globals.name.last } - Blog
+  div#content
+   #post
+    != yield
+  footer
+   p &copy; 2013 #{globals.name.first} #{globals.name.last}. All Rights Reserved.
+// Blog Post
+// Web Design and Development by Krish Dholakiya and Colin McIllece

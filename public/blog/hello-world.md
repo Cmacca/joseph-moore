@@ -1,0 +1,4 @@
+#Hello World!
+_____
+
+Hello, and **welcome** to my official blog! First off, let me introduce myself. I'm Joseph Moore, world-renowned public speaker and orator. I specialize in motivational speeches, and am **passionate** about what I do. This year, I am set to go on a tour around the United States and Canada to spread motivation via the theme "Vision, Motivation, Action". This theme summarizes all the steps I took in order to achieve my current success, and what it will take for anyone else to succeed. Hopefully, I will benefit those who attend the conference, and if I am visiting your city, I hope you attend as well. In case your interested, here's the link to register and book your tickets: [Book Tickets Now](/booking).

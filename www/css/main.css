@@ -1,0 +1,5 @@
+.transition{transition:background 0.25s,color 0.25s,border 0.25s, position 0.25s;}
+header h1{vertical-align:top;display:inline-block;}
+header img{margin-right:20px;border-radius:100%;display:inline-block;border:2px solid #bdc3c7;}
+.postli{font-size:3em;font-weight:bold;color:#2c3e50;}
+#post{max-width:800px;line-height:2em;font-size:1.15em;padding-top:20px;}
