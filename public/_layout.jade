@@ -8,7 +8,9 @@ html
   header
    img(src='#{globals.profile.img}', width="100px")
    h1.
-    #{ globals.name.first } #{ globals.name.last } - "Vision, Motivation, Action"
+    #{ globals.name.first } #{ globals.name.last } - Author and Speaker
+  nav.nav
+   a(href='/blog') Blog
   div#content
    != yield
   footer
