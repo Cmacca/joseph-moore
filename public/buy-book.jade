@@ -1,0 +1,33 @@
+#pitch
+ #product
+  h1 #{globals.public.data.book.title}
+  img(src='http://placehold.it/150x200/&text=Book')
+  p #{globals.public.data.book.desc}
+ #checkout
+  input(type='text', class='quant', ng-model='bookQuantity', ng-change='changeQuantity()', placeholder='Quantity')
+  p Price = {{priceTotal | currency}}
+  hr
+  p Pay with:
+  form
+   label <input type='radio' name='pay' value='paypal' ng-model='pProvide' ng-change='payChange()'> Paypal
+   label <input type='radio' name='pay' value='card' ng-model='pProvide' ng-change='payChange()'> Card 
+  #paypal
+   img(src='http://placehold.it/100x50/&text=Paypal')
+  #skeuocard.credit-card-input.no-js
+   label(for='cc_type') Card Type
+   select(name='cc_type', ng-model='cardType', ng-change='toChange(cardType)')
+    option(value='') ...
+    option(value='visa') Visa
+    option(value='discover') Discover
+    option(value='mastercard') MasterCard
+    option(value='amex') American Express
+    option(value='dinersclubintl') Diners Club
+   label(for='cc_number') Card Number
+   input(type='text', name='cc_number', placeholder='XXXX XXXX XXXX XXXX', maxlength='19', size='19', ng-model='cardNum', ng-change='toChange(cardNum)')
+   label(for='cc_exp') Expiration Date (mm/yy)
+   input(type='text', name='cc_exp', placeholder='00/00', ng-model='expDate', ng-change='toChange(expDate)')
+   label(for='cc_name') Cardholder's Name
+   input(type='text', name='cc_name', placeholder='John Doe', ng-model='cardName', ng-change='toChange(cardName)')
+   label(for='cc_cvc') Card Validation Code
+   input(type='text', name='cc_cvc', placeholder='XXX', maxlength='3', size='3', ng-model='cvc', ng-change='toChange(cvc)')
+  a.bn.blue.next-but(href='/shipping-and-handling') Next

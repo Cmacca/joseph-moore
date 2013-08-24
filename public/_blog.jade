@@ -4,6 +4,9 @@ html
   title #{ globals.name.first } #{ globals.name.last } - Blog
   link(href='/css/main.css', rel='stylesheet', type='text/css')
   link(href='/css/some.css', rel='stylesheet', type='text/css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+  script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js')
+  script(src='/my.js', type='text/javascript')
  body
   header
    img(src='#{globals.profile.img}', width="100px")
@@ -20,5 +23,8 @@ html
     != yield
   footer
    p &copy; 2013 #{globals.name.first} #{globals.name.last}. All Rights Reserved.
-// Blog Post
-// Web Design and Development by Krish Dholakiya and Colin McIllece
+   span.credit Website Design and Development by 
+    a(href='http://krrishd.github.io') Krish Dholakiya 
+    span and 
+    a(href='#') Colin McIllece
+// Web Design and Development by Krish Dholakiya (krrishd.github.io) and Colin McIllece

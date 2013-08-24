@@ -2,8 +2,16 @@ doctype 5
 html
  head
   title #{ globals.name.first } #{ globals.name.last } - Profilic Motivational Speaker
+  link(rel='stylesheet', href='skeuocard/styles/skeuocard.reset.css', type='text/css')
+  link(rel='stylesheet', href='skeuocard/styles/skeuocard.css', type='text/css')
   link(href='/css/main.css', rel='stylesheet', type='text/css')
   link(href='/css/some.css', rel='stylesheet', type='text/css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+  script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js')
+  script(src='skeuocard/javascripts/vendor/css_browser_selector.js')
+  script(src='skeuocard/javascripts/skeuocard.js')
+  script(src='/ctrl.js')
+  script(src='/my.js', type='text/javascript')
  body
   header
    img(src='#{globals.profile.img}', width="100px")
@@ -16,8 +24,12 @@ html
    a(href='/event-schedule') Tour Schedule
    a(href='/booking') Book Tickets
    a(href='/blog') Blog
-  div#content
+  div#content(ng-app="", ng-controller='pageCtrl')
    != yield
   footer
    p &copy; 2013 #{globals.name.first} #{globals.name.last}. All Rights Reserved.
+   span.credit Website Design and Development by 
+    a(href='http://krrishd.github.io') Krish Dholakiya 
+    span and 
+    a(href='#') Colin McIllece
 // Web Design and Development by Krish Dholakiya and Colin McIllece
