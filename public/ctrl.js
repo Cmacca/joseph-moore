@@ -1,18 +1,18 @@
 function pageCtrl($scope) {
 	$scope.priceTotal = $scope.bookQuantity * 7.99;
 
-	$('.next-but').hide();
-	
+	$('#payit').hide();
+
 	$scope.changeQuantity = function() {
 		localStorage.bookQuantity = $scope.bookQuantity;
 		$scope.priceTotal = $scope.bookQuantity * 7.99;
 		localStorage.cost = $scope.priceTotal;
 		
 		if ($scope.bookQuantity > 0) {
-			$('.next-but').css("display", "block");
+			$('#payit').show();
 		}
 		else {
-			$('.next-but').hide();
+			$('#payit').hide();
 		}
 	};
 
