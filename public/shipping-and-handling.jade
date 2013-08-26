@@ -1,0 +1,31 @@
+#pitch
+ h1 Shipping & Handling
+ form#snh
+  label
+   span Full Name
+   input(type='text', ng-model='sName', ng-change='snhName()', id='sName')
+  label
+   span Address
+   input(type='text', ng-model='sAddress', ng-change='snhAddress()')
+  label
+   span City
+   input(type='text', ng-model='sCity', ng-change='snhCity()')
+  label
+   span State
+   input(type='text', ng-model='sState', ng-change='snhState()')
+  label
+   span Zip Code
+   input(type='text', ng-model='sZip', ng-change='snhZip()')
+  label
+   span I accept the terms and conditions
+   input(type='checkbox', ng-model='sAccept', ng-change='accepted()')
+  a.next-but.bn.blue(href='/thank-you') Next
+ #snhDeets
+  p The following terms apply to shipping & handling:
+  p(class='tc').
+   Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+  p(class='tc').
+   Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+  p(class='tc').
+   Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service
+  

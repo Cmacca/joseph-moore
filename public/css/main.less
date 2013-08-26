@@ -81,10 +81,40 @@ text-align: left;
 	border-radius: 5px;
 	margin: 20px;
 }
-.next-but {
-	display: block !important;
+
+.bn.blue {
+	display:block;
 }
 
+.next-but {
+	display: block;
+}
+
+#snh { 
+	display:inline-block;
+	margin-top: 20px;
+	label {
+		display: block;
+		margin-bottom: 37.5px;
+		text-align: justify;
+		span {
+			padding-right: 40px;
+		}
+	}
+	input[ng-model='accept'] {
+		margin-left: -20px;
+	}
+}
+
+#snhDeets {
+	display:inline-block;
+	vertical-align: top;
+	max-width: 300px;
+	.tc {
+		font-size: .6em;
+		line-height: 20px;
+	}
+}
 @media (max-width:716px) {
 	.nav {
 		margin-left:auto;
