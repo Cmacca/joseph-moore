@@ -4,6 +4,7 @@
   img(src='http://placehold.it/150x200/3498db/000/&text=Book')
   p #{globals.public.data.book.desc}
  #checkout
+  h2 Buy Now!
   input(type='text', class='quant', ng-model='bookQuantity', ng-change='changeQuantity()', placeholder='Quantity')
   p Price = {{priceTotal | currency}}
   #payit
