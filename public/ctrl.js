@@ -18,6 +18,9 @@ function pageCtrl($scope) {
 	}
 
 	$('#payit').hide();
+	if ($scope.bookQuantity > 0) {
+		$('#payit').show();
+	}
 	$('.next-but').attr("style", "display:none !important");
 
 	$scope.changeQuantity = function() {
