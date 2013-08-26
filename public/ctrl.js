@@ -1,5 +1,20 @@
 function pageCtrl($scope) {
 	$scope.priceTotal = $scope.bookQuantity * 7.99;
+	$scope.sName = localStorage.sName;
+	$scope.sAddress = localStorage.sAddress;
+	$scope.sState = localStorage.sState;
+	$scope.sCity = localStorage.sCity;
+	$scope.sZip = localStorage.sZip;
+	$scope.bookQuantity = localStorage.bookQuantity;
+	$scope.priceTotal = localStorage.cost;
+
+	if (localStorage.bookQuantity > 1) {
+		$scope.plurr = "copies";
+	}
+
+	else {
+		$scope.plurr = "copy";
+	}
 
 	$('#payit').hide();
 	$('.next-but').attr("style", "display:none !important");
