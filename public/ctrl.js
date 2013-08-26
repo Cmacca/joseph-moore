@@ -8,6 +8,7 @@ function pageCtrl($scope) {
 	$scope.bookQuantity = localStorage.bookQuantity;
 	$scope.priceTotal = localStorage.cost;
 
+
 	if (localStorage.bookQuantity > 1) {
 		$scope.plurr = "copies";
 	}
