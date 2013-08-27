@@ -68,12 +68,14 @@ function pageCtrl($scope) {
  		else if (localStorage.acceptIt == "false" || localStorage.sName.length <= 0 || localStorage.sAddress.length <= 0 || localStorage.sCity.length <= 0 || localStorage.sState.length <= 0 || localStorage.sZip.length <= 0) {
  			$('.next-but').attr("style", "display: none;");
  		}
- 	}
+ 	};
+
 
  	$scope.snhName = function() {
  		localStorage.sName = $scope.sName;
  		$scope.accepted();
- 	}
+ 	};
+
  	$scope.snhAddress = function() {
  		localStorage.sAddress = $scope.sAddress;
  		$scope.accepted();
@@ -81,16 +83,28 @@ function pageCtrl($scope) {
  	$scope.snhCity = function() {
  		localStorage.sCity = $scope.sCity;
  		$scope.accepted();
- 	}
+ 	};
+
  	$scope.snhState = function() {
  		localStorage.sState = $scope.sState;
  		$scope.accepted();
  				
- 	}
+ 	};
+
  	$scope.snhZip = function() {
  		localStorage.sZip = $scope.sZip;
  		$scope.accepted();
- 	}
-
+ 	};
+	
+	$scope.places = [
+		{ main: 'Washington DC', date: 'January 1st 2014', loc: 'White House' },
+		{ main: 'New York', date: 'January 3rd 2014', loc: 'Times Square' },
+		{ main: 'Virginia', date: 'January 9th 2014', loc: 'Albus D. Memorial Theater' },
+		{ main: 'Texas', date: 'January 12th 2014', loc: 'Gryffindor Convention Center' },
+		{ main: 'California', date: 'January 15th 2014', loc: 'Diagon Alley Convention Center' },
+		{ main: 'Colorado', date: 'January 20th 2014', loc: 'Hogsmeade Village' },
+		{ main: 'Nevada', date: 'January 17th 2014', loc: 'Lily and James Potter Charitable Foundation' },
+	];
 
 }
+
