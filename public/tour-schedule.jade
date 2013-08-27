@@ -1,7 +1,7 @@
 #pitch
  #search
   input(type='text', ng-model='q')
- #tourlist(ng-repeat='place in places | filter:q')
+ #tourlist(ng-repeat='place in places | filter:q', ng-click='locPersist(place.main)')
   li.list-item(ng-click='locPersist(place.main)') {{ place.main }} - {{ place.date }}
   li(ng-click='locPersist(place.main)') {{ place.loc }}
   br

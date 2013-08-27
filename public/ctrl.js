@@ -10,6 +10,7 @@ function pageCtrl($scope) {
 	$scope.destination = localStorage.destination;
 	$scope.ticPrice = localStorage.ticPrice;
 
+
 	if (localStorage.bookQuantity > 1) {
 		$scope.plurr = "copies";
 	}
@@ -116,6 +117,8 @@ function pageCtrl($scope) {
 		$scope.ticPrice = $scope.ticQuant * 24.99;
 		localStorage.ticPrice = $scope.ticPrice;
 	}
+
+
 
 }
 
