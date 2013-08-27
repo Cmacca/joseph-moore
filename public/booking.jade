@@ -2,4 +2,4 @@
  #ticBook
   h2 Destination: {{ destination }}
   input(type='text', ng-model='ticQuant', ng-change='ticChange()')
-  p Total Cost: {{ ticPrice }}
+  p Total Cost: {{ ticPrice | currency }}
