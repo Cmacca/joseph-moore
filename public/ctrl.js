@@ -7,7 +7,8 @@ function pageCtrl($scope) {
 	$scope.sZip = localStorage.sZip;
 	$scope.bookQuantity = localStorage.bookQuantity;
 	$scope.priceTotal = localStorage.cost;
-
+	$scope.destination = localStorage.destination;
+	$scope.ticPrice = localStorage.ticPrice;
 
 	if (localStorage.bookQuantity > 1) {
 		$scope.plurr = "copies";
@@ -105,6 +106,16 @@ function pageCtrl($scope) {
 		{ main: 'Colorado', date: 'January 20th 2014', loc: 'Hogsmeade Village' },
 		{ main: 'Nevada', date: 'January 17th 2014', loc: 'Lily and James Potter Charitable Foundation' },
 	];
+
+	$scope.locPersist = function(location) {
+		localStorage.destination = location;
+		window.location = '/booking';
+	};
+
+	$scope.ticChange = function() {
+		$scope.ticPrice = $scope.ticQuant * 24.99;
+		localStorage.ticPrice = $scope.ticPrice;
+	}
 
 }
 
