@@ -21,7 +21,7 @@ function pageCtrl($scope, angularFire) {
 	$scope.storeData = function() {
 		$scope.shopData.push({
 			quantity: localStorage.bookQuantity,
-			price: localStorage.priceTotal,
+			price: localStorage.cost,
 			name: localStorage.sName,
 			address: localStorage.sAddress,
 			state: localStorage.sState,
