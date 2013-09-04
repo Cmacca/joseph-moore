@@ -10,6 +10,12 @@ function pageCtrl($scope) {
 	$scope.destination = localStorage.destination;
 	$scope.ticPrice = localStorage.ticPrice;
 
+	if (localStorage.been != "true") {
+		$('header img').addClass("animated");
+		$('header img').addClass("bounceInDown");
+		localStorage.been = "true";
+	}
+
 
 	if (localStorage.bookQuantity > 1) {
 		$scope.plurr = "copies";
