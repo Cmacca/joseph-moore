@@ -1,4 +1,6 @@
-function pageCtrl($scope) {
+var app = angular.module('shop', ['firebase']);
+
+function pageCtrl($scope, angularFire) {
 	$scope.priceTotal = $scope.bookQuantity * 7.99;
 	$scope.sName = localStorage.sName;
 	$scope.sAddress = localStorage.sAddress;
@@ -9,6 +11,24 @@ function pageCtrl($scope) {
 	$scope.priceTotal = localStorage.cost;
 	$scope.destination = localStorage.destination;
 	$scope.ticPrice = localStorage.ticPrice;
+
+	var ref = new Firebase("https://ebiz.firebaseIO.com");
+
+	$scope.shopData = [];
+
+	angularFire(ref, $scope, "shopData");
+
+	$scope.storeData = function() {
+		$scope.shopData.push({
+			quantity: localStorage.bookQuantity,
+			price: localStorage.priceTotal,
+			name: localStorage.sName,
+			address: localStorage.sAddress,
+			state: localStorage.sState,
+			city: localStorage.sCity, 
+		})
+		console.log("Pushed!")
+	}
 
 	if (localStorage.been != "true") {
 		$('header img').addClass("animated");
