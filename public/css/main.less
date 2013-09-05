@@ -27,6 +27,7 @@ header {
 	max-width:960px;
 	line-height: 2em;
 	font-size: 1.15em;
+	min-height:100%;
 	.bn {
 		margin: 20px;
 	}
@@ -174,6 +175,28 @@ text-align: left;
 .order {
 	display:block;
 	margin:5px;
+}
+
+.widge {
+	padding:10px;
+	max-width:300px;
+	margin:0 auto;
+	display:inline-block;
+	vertical-align: top;
+	margin-top: 15px;
+	&:nth-child(2n+1) {
+		background: rgba(0,0,0,.1);
+		border-radius: 10px;
+		box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,.1);
+	}
+	p {
+		max-width:400px;
+		margin:0 auto;
+	}
+}	
+
+.bn.blue.big[href='/buy-book'] {
+	width: 215px;
 }
 
 @media (max-width:716px) {
