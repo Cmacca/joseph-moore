@@ -39,9 +39,16 @@ header {
 	margin-bottom: 20px;
 }
 
-.nav a {
-	border-radius:0 !important;
+.nav a:last-child; {
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
 }
+
+.nav a:first-child {
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+
 .postli {
 	font-size: 3em;
 	font-weight: bold;
@@ -175,3 +182,8 @@ text-align: left;
 	}
 }
 
+@media (max-width:413px) {
+	.nav a{
+		border-radius: 0px !important;
+	}
+}
