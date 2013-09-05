@@ -19,7 +19,7 @@
   label.lbl.blue
    span I accept the terms and conditions
    input(type='checkbox', ng-model='sAccept', ng-change='accepted()')
-  a.next-but.bn.blue(href='/thank-you') Next
+  a.next-but.bn.blue(href='/thank-you', ng-click='storeData()') Next
  #snhDeets
   p The following terms apply to shipping & handling:
   p(class='tc').

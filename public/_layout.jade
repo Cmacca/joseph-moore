@@ -5,9 +5,12 @@ html
   link(rel='stylesheet', href='skeuocard/styles/skeuocard.reset.css', type='text/css')
   link(rel='stylesheet', href='skeuocard/styles/skeuocard.css', type='text/css')
   link(href='/css/some.css', rel='stylesheet', type='text/css')
+  link(href='/css/animate.css', rel='stylesheet', type='text/css')
   link(href='/css/main.css', rel='stylesheet', type='text/css')
   script(src='/cdn/jquery.min.js')
   script(src='/cdn/angular.min.js')
+  script(src='https://cdn.firebase.com/v0/firebase.js')
+  script(src='https://cdn.firebase.com/libs/angularfire/0.3.0/angularfire.min.js')
   script(src='skeuocard/javascripts/vendor/css_browser_selector.js')
   script(src='skeuocard/javascripts/skeuocard.js')
   script(src='/ctrl.js')
@@ -23,7 +26,7 @@ html
    a(href='/buy-book') Buy Book
    a(href='/tour-schedule') Tour Schedule
    a(href='/blog') Blog
-  div#content(ng-app="", ng-controller='pageCtrl')
+  div#content(ng-app="shop", ng-controller='pageCtrl')
    != yield
   footer
    p &copy; 2013 #{globals.name.first} #{globals.name.last}. All Rights Reserved.
@@ -32,5 +35,10 @@ html
     span and 
     a(href='http://definitestudios.com') Colin McIllece
 // Using some.css framework by Krish Dholakiya - krrishd.github.io/some-css
+<<<<<<< HEAD
 // Front-End Development w/Jade, LESS, AngularJS, and HarpJS and Infrastructure Management w/Git and Heroku by Krish Dholakiya
 // Front-End Development, Graphic Design, Content Management, and Information Architecture by Colin McIllece
+=======
+// Front-End Development w/Jade, LESS, AngularJS, and HarpJS and Infrastructure Management w/Git, Heroku and Firebase BaaS by Krish Dholakiya
+// Graphic Design, Content Management, Front-End Modifications, and Information Architecture by Colin McIllece
+>>>>>>> 88a6f29e90d0cdc62f3d7805d0a3ae8e5e4ef934
