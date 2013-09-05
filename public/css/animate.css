@@ -1,3 +1,14 @@
+$(document).ready(function() {
+	$("header.img").mouseenter(function() {
+    $("this").animate({height: 20}, 'fast', function(){ 
+    });
+	$("header.img").mouseleave(function() {
+    $("this").animate({height: 0}, 'fast', function(){ 
+    });
+	$("header.img").hover(function() {
+	$("#headhover").toggle( showOrHide ) ;
+	});
+});;
 .animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}@-webkit-keyframes bounceInDown {
 	0% {
 		opacity: 0;
