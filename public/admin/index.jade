@@ -2,7 +2,7 @@
  h1 Orders
  #orders.lbl.blue(ng-repeat = "data in shopData")
   span.order <b>Quantity</b>: {{ data.quantity }}
-  span.order <b>Price</b>: {{ data.price }}
+  span.order <b>Price</b>: {{ data.price | currency }}
   span.order <b>Name</b>: {{ data.name }}
   span.order <b>Address</b>: {{ data.address }}
   span.order <b>City</b>: {{ data.city }}
@@ -11,4 +11,4 @@
  #orders.lbl.dark(ng-repeat = "data in shopTicData")
   span.order <b>Email</b>: {{ data.email }}
   span.order <b>Location</b>: {{ data.location }}
-  span.order <b>Price</b>: {{ data.price }}
+  span.order <b>Price</b>: {{ data.ticPrice | currency }}

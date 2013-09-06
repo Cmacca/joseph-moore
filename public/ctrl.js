@@ -96,7 +96,7 @@ function pageCtrl($scope, angularFire) {
 		$scope.shopTicData.push({
 			email: localStorage.email,
 			location: localStorage.destination,
-			price: localStorage.ticPrice
+			ticPrice: localStorage.ticPrice
 		})
 	}
 
