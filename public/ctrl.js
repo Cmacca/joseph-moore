@@ -33,13 +33,6 @@ function pageCtrl($scope, angularFire) {
 		console.log("Pushed!")
 	}
 
-	$scope.storeTicData = function() {
-		$scope.shopTicData.push({
-			location: localStorage.destination,
-			price: localStorage.ticPrice
-		})
-		console.log("Pushed!")
-	}
 
 	if (localStorage.been != "true") {
 		$('header img').addClass("animated");
@@ -100,8 +93,13 @@ function pageCtrl($scope, angularFire) {
 	
 	$scope.emReg = function() {
 		localStorage.email = $scope.email;
+		$scope.shopTicData.push({
+			email: localStorage.email,
+			location: localStorage.destination,
+			price: localStorage.ticPrice
+		})
 	}
-	
+
 	$scope.accepted = function() {
  		localStorage.acceptIt = $scope.sAccept;
  		console.log("cahnged")
