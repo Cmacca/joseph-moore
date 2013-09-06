@@ -13,13 +13,12 @@ function pageCtrl($scope, angularFire) {
 	$scope.ticPrice = localStorage.ticPrice;
 	$scope.email = localStorage.email;
 
-	var ref = new Firebase("https://ebiz.firebaseIO.com");
+	var ref = new Firebase("https://ebiz.firebaseio.com");
 
 	$scope.shopData = [];
-	$scope.shopTicData = [];
-
+	
 	angularFire(ref, $scope, "shopData");
-	angularFire(ref, $scope, "shopTicData");
+
 
 	$scope.storeData = function() {
 		$scope.shopData.push({
@@ -30,16 +29,13 @@ function pageCtrl($scope, angularFire) {
 			state: localStorage.sState,
 			city: localStorage.sCity, 
 		})
-		console.log("Pushed!")
+		console.log($scope.shopData);
+	};
+
+	$scope.eMail = function() {
+		localStorage.email = $scope.email;
 	}
 
-	$scope.storeTicData = function() {
-		$scope.shopTicData.push({
-			location: localStorage.destination,
-			price: localStorage.ticPrice
-		})
-		console.log("Pushed!")
-	}
 
 	if (localStorage.been != "true") {
 		$('header img').addClass("animated");
@@ -98,10 +94,8 @@ function pageCtrl($scope, angularFire) {
 	}
 	};
 	
-	$scope.emReg = function() {
-		localStorage.email = $scope.email;
-	}
-	
+
+
 	$scope.accepted = function() {
  		localStorage.acceptIt = $scope.sAccept;
  		console.log("cahnged")

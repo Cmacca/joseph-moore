@@ -1,6 +1,6 @@
 #checkout
-  #payit
-   input(type='text', placeholder='Email Address', ng-model='email', requireds)
+  #payity
+   input(type='text', placeholder='Email Address', ng-model='email', required, ng-change='eMail()')
    p Pay with:
    form
     label <input type='radio' name='pay' value='paypal' ng-model='pProvide' ng-change='payChange()'> Paypal
@@ -25,4 +25,4 @@
     label(for='cc_cvc') Card Validation Code
     input(type='text', name='cc_cvc', placeholder='XXX', maxlength='3', size='3', ng-model='cvc', ng-change='toChange(cvc)')
    br
-   a.bn.blue.shhref(href='/ticket-thanks', ng-click='emReg()') Purchase
+   a.bn.blue.shhref(href='/ticket-thanks', ng-click='ticReg()') Purchase
