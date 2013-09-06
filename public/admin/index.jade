@@ -8,3 +8,7 @@
   span.order <b>City</b>: {{ data.city }}
   span.order <b>State</b>: {{ data.state }}
  h1 Ticket Orders
+ #orders.lbl.dark(ng-repeat = "data in shopTicData")
+  span.order <b>Email</b>: {{ data.email }}
+  span.order <b>Location</b>: {{ data.location }}
+  span.order <b>Price</b>: {{ data.price }}
