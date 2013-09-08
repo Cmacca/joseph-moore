@@ -179,16 +179,18 @@ text-align: left;
 .widge {
 	padding:10px;
 	max-width:300px;
-	height: 260px;
+	min-height: 260px;
 	margin:0 auto;
+	margin-right: 15px;
+	margin-left: 15px;
 	display:inline-block;
 	vertical-align: top;
 	margin-top: 15px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 10px;
 	&:nth-child(2n+1) {
 		background: rgba(0,0,0,.1);
-		height:260px;
+		min-height:260px;
 		border-radius: 10px;
 		box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,.1);
 	}
@@ -196,7 +198,14 @@ text-align: left;
 		max-width:400px;
 		margin:0 auto;
 	}
-}	
+}
+.widge:hover {
+	background-color:#bdc3c7;
+	&:nth-child(2n+1) {
+		background: #ecf0f1;
+	}
+}
+	
 
 #orders {
 margin: 10px;
