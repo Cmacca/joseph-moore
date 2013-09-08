@@ -12,6 +12,7 @@ function pageCtrl($scope, angularFire) {
 	$scope.destination = localStorage.destination;
 	$scope.ticPrice = localStorage.ticPrice;
 	$scope.email = localStorage.email;
+	$scope.ifram.url = "http://showterm.io/47943021471bf95ebe7ce#fast";
 
 	var ref = new Firebase("https://ebiz.firebaseio.com");
 
@@ -36,6 +37,9 @@ function pageCtrl($scope, angularFire) {
 		localStorage.email = $scope.email;
 	}
 
+	$.scope.switchSrc = function() {
+		$('.tdemo iframe').attr("src", "http://showterm.io/cca503bdedf66276bde79#fast" );
+	}
 
 	if (localStorage.been != "true") {
 		$('header img').addClass("animated");
