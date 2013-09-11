@@ -37,11 +37,11 @@ function pageCtrl($scope, angularFire) {
 	}
 
 
-	if (localStorage.been != "true") {
-		$('header img').addClass("animated");
-		$('header img').addClass("bounceInDown");
-		localStorage.been = "true";
-	}
+	//if (localStorage.been != "true") {
+	//	$('header img').addClass("animated");
+	//	$('header img').addClass("bounceInDown");
+	//	localStorage.been = "true";
+	//}
 
 
 	if (localStorage.bookQuantity > 1) {

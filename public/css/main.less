@@ -86,6 +86,11 @@ list-style-type: none;
 	border-radius: 10px;
 	margin: 10px;
 	border-bottom:3px solid rgba(0,0,0,.2);
+	display: inline-block;
+	padding: 30px;
+	max-width: 200px;
+	min-height: 200px;
+	vertical-align: top;
 	&:hover {
 		-webkit-transition: all .35s ease-in-out;
 		-moz-transition: all .35s ease-in-out;
@@ -94,11 +99,11 @@ list-style-type: none;
 		background:rgba(0,0,0,.2);
 		cursor:pointer;
 	}
-	&:hover:after {
-		content: "Book Ticket Now!";
-		display:inline-block;
-		vertical-align: middle;
-	}
+}
+
+
+#search {
+	border-radius:10px;
 }
 
 footer {
@@ -126,7 +131,15 @@ footer {
 	}
 }
 	display: inline-block;
-	text-align: left;
+	text-align: center;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid rgba(0,0,0,.1);
+	box-shadow: inset 1px 1px 10px 3px rgba(0,0,0,.2);
+	img {
+		display: block;
+		margin: 0 auto;
+	}
  }
 
 #checkout {

@@ -1,6 +1,6 @@
 #pitch
  #ticBook
   h2 Destination: {{ destination }}
-  input(type='text', ng-model='ticQuant', ng-change='ticChange()')
+  input(type='text', ng-model='ticQuant', ng-change='ticChange()', placeholder="Number of Tickets")
   p Total Cost: {{ ticPrice | currency }}
   a.bn.blue(href='/ticket-checkout') Book Ticket

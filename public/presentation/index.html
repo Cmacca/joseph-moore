@@ -40,6 +40,26 @@
 			display:block !important;
 		}
 
+		.tasks li:hover {
+			cursor: pointer;
+		}
+
+		.tasks li img {
+			transition: display 0.5s, background 0.25s,color 0.25s,border 0.25s, position 0.25s;
+			display:none;
+		}
+
+		.tasks li:hover img,
+		.tasks li:focus img {
+			transition: display 0.5s, background 0.25s,color 0.25s,border 0.25s, position 0.25s;
+			display:block;
+			position:absolute;
+			top:0;
+			bottom:0;left:0;right:0;
+			margin:0 auto;
+			box-shadow:1px 1px 5px 3px rgba(0,0,0,1);
+		}
+
 		li {
 			list-style-type: circle;
 			margin-bottom:15px;
@@ -104,18 +124,18 @@
 						<h2>Front-End Development</h2>
 						<hr>
 						<ul class='tasks'>
-						<li>Jade - A Whitespace-Sensitive Dynamic Templating Language for HTML</li>
-						<li>LESS - A CSS Preprocessor with variables, mixins, nesting</li>
-						<li>AngularJS -  A Model-View-Controller (MVC) Framework for HTML and JavaScript</li>
+						<li>Jade - A Whitespace-Sensitive Dynamic Templating Language for HTML <img src='/images/jade.png'></li>
+						<li>LESS - A CSS Preprocessor with variables, mixins, nesting <img src='/images/less.png'></li>
+						<li>AngularJS -  A Model-View-Controller (MVC) Framework for HTML and JavaScript <img src='/images/angular.png'></li>
 						</ul>
 					</section>
 					<section>
 						<h2>Infrastructure Management</h2>
 						<hr>
 						<ul class='tasks'>
-						<li>Git Version Control System and GitHub Integration -  A way to ensure all development code is consistent and streamlines collaboration</li>
-						<li>Heroku PaaS - VPS would be a hassle to manage w/o extensive time spent on sysadmin, shared hosting lack language support and robustness; a PaaS provides the best of both worlds</li>
-						<li>HarpJS - A way to ensure that all our Jade and LESS would be preprocessed without hassle, and allows for dynamic content powered by JSON files</li>
+						<li>Git Version Control System and GitHub Integration -  A way to ensure all development code is consistent and streamlines collaboration <img src='/images/github.png'></li>
+						<li>Heroku PaaS - VPS would be a hassle to manage w/o extensive time spent on sysadmin, shared hosting lack language support and robustness; a PaaS provides the best of both worlds <img src='/images/heroku.png'></li>
+						<li>HarpJS - A way to ensure that all our Jade and LESS would be preprocessed without hassle, and allows for dynamic content powered by JSON files <img src='/images/harp.png'></li>
 						</ul>
 					</section>
 					<section>
@@ -130,7 +150,8 @@
 						<h2>Backend Engineering</h2>
 						<hr>
 						<ul class='tasks'>
-						<li>Firebase BaaS - A cloud-based document-oriented backend with a AngularJS API, used to keep track of book and ticket orders; API ensured that data in the cloud perfectly synced with AngularJS $scope(like variables) in realtime</li>
+						<li>Firebase BaaS - A cloud-based document-oriented backend with a AngularJS API, used to keep track of book and ticket orders <img src='/images/firebase.png'></li>
+						<li>JavaScript and AngularJS API ensured that data in the cloud perfectly synced with AngularJS $scope(like variables) in realtime.<img src='/images/angular.png'></li>
 						</ul>
 					</section>
 					<section>

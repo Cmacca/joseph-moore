@@ -1,6 +1,6 @@
 #pitch
  #search
-  input(type='text', ng-model='q')
+  input(type='text', ng-model='q', placeholder="Search...")
  #tourlist(ng-repeat='place in places | filter:q', ng-click='locPersist(place.main)')
   li.list-item(ng-click='locPersist(place.main)') {{ place.main }} - {{ place.date }}
   li(ng-click='locPersist(place.main)') {{ place.loc }}
